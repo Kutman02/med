@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>О нас</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <h3><i class="fas fa-info-circle"></i> О нас <span id="current-time"></span></h3>
+    </header>
+    <script>
+      function getCurrentTime() {
+        const currentTime = new Date();
+        const hours = currentTime.getHours().toString().padStart(2, '0');
+        const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+        const seconds = currentTime.getSeconds().toString().padStart(2, '0');
+        const currentTimeString = `${hours}:${minutes}:${seconds}`;
+    
+        document.getElementById('current-time').innerHTML = currentTimeString;
+      }
+    
+      getCurrentTime(); // Инициализация текущего времени при загрузке страницы
+    
+      // Обновление текущего времени каждую секунду
+      setInterval(getCurrentTime, 1000);
+    </script>
+    <main>
+      <section>
+        <h2>Наша команда</h2>
+        <p class="fas fa-users">  Мы команда разработчиков, занимающихся созданием приложения для отслеживания приема лекарств. Наша цель - помочь пользователям в удобном контроле приема лекарств и поддержке их здоровья.</p>
+  <p class="fas fa-bullseye">  Мы стремимся предоставить простой и интуитивно понятный инструмент, который позволит пользователям эффективно управлять своими лекарственными назначениями, не пропуская ни одной дозы.</p>
+  <p class="fas fa-cogs">  Наша команда специализируется на разработке надежных и безопасных решений, учитывая потребности и требования наших пользователей. Мы стремимся к постоянному улучшению нашего приложения и предоставлению лучшего опыта для всех наших пользователей.</p>
+      </section>
+  
+      <section class="achievements">
+        <h2>Контакты</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>Номер телефона: 123-456-7890</p> <!-- Замените "123-456-7890" на ваш номер телефона -->
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>Электронная почта: info@example.com</p> <!-- Замените "info@example.com" на ваш адрес электронной почты -->
+          </div>
+        </div>
+        <div class="address">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Адрес: г. Ваш Город, ул. Ваша Улица, д. 123</p> <!-- Замените "г. Ваш Город, ул. Ваша Улица, д. 123" на ваш адрес -->
+        </div>
+      </section>
+      
+      
+    </main> 
+
+    <section class="about-us">
+      <h2>Наша команда</h2>
+      <div class="team-member">
+        <img src="data:image/jpeg;base64,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" alt="Участник команды">
+        <h3>Иван Иванов</h3>
+        <p>Директор</p>
+      </div>
+      <div class="team-member">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWEhUWFRIZGRgZGBgZGRwZGBgYHBocGhgaGRoYGRgcIS4lHB4rIRoYJjgmKy8xNTU1GiQ7QDs1Py40NTEBDAwMEA8QHxISHjQkJCE0NDQ3NDQ0NDQ0NDQ0NDExMTQ0NDQ0NDQxNDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIDBAUHBgj/xABEEAABAwEEBgYGCQMEAQUAAAABAAIRAwQSITEFQVFhcYEGIkKRofAHEzKxwdEjUmKCkqKy4fEUcsIzU2PSJBVDg5Oz/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAhEQEBAQEAAwADAAMBAAAAAAAAAQIREiExA0FRIjJhgf/aAAwDAQACEQMRAD8A60hCEAmkhA0IQgaEk0AokKSRQQIVbh585qjSuk6Vnp36rw1uQ1lx2NGsrlunundes4soE0mZC77Z4v7P3Y4lS6kambr46ba7fSp/6lRjNznAE8s4WA/pNZB/74PBrzyEBccZWJJLjeJzJxnic1kMqLPlXSfjn7rq7elNkOdaPuPHIYLPsmlaFUwytTecOq14k7BdzjkuM1LRqmfO9ay0V8cW8xgQnlS4j6F98+Os8Al7o/L8yuM6F6b2mhALzWp5FjyS4DY1/tDgZG5dO6P9JKFrbNN0PGLmPweDw7TRtHgVZqVjWLG5x5z+Y5DgAlhG6D+HWeLijnhjju7TuafLZhv7LeWa0wfvkYfa1Dg0Y+KXPUcdg7VTich8pRz247s3u78EctmH6Gbtp+SA5RgMNYacmD7Ttf8ABR/Bjwps+J8g154yYO/tPO4ZD+EDuEc2tOvbecfM5g5/69X9DO7F27VHVMtgjm1h2NHbf53FeEADDsg5Mb9o4Ty3JzG6MMMbk9lg1uO3+EBGY5kTB41H6h9keIwC+r+U3cP/AI2f5HLeERuAjGDi1u9x7T9ccNxLEzrk74c4bXO7Ddw9+CCfX2VO+khUSzZR/GPkmgzEIQgEIQgE0kIGhJNALA0rpajZ2X6tQNGMDNzo1NaMSqOkmmmWWg6o6C49VjfrO+QzP7rjNv0k+0VHPe8uc7WdQ1NAyA3LOtcbznyZfSXSlS1VHPcYGTGTg1upo36ydZ5LSUbM45j4r02itEl4kheisOgGsxOa5XT0TMjn/qrhy5ZQtbWtpa4jzzGpdR0hoRj46vMati8Zp7o+4h0CHN2axt3jzxZ0tx/HnXWuR++XBQNXUSPPHIrE9W5rrrsNnFWhhcLpGPvW2Im+QcP5/dZFjtzmPY9jy17TIcDBncVh2d+N12R9njsUarbrvsuwO46j3wsq7h0M6WttTQypArATsFQDItGojMt5jCQPV89uO/tO+C+cLDa3Me1wcQ4OBDhgQ4YhwOqfeCu4dENPttdGXQKjLoe0YT9VzRsdjwMjKFvOu+q5bxz3G+5bMNw9lvMp88ccd/adyyHcj3z+bWeACWHKPy/NxW3IYcoGH2ey3mfkpYztM8i7bwaPdtCWPOfzEe5oSwjdH5fm496AB2HUSCdQ7TzvOMfynlugfgB973fH8RxxMjDa7NreDRj47Uc5zIJ1ntPduGQHwiAeW6MdoZO36zzPj+JEZiN5BOH91Q68Oz5ADswzInsjW932jjA/dHhHW62r7b9rtg/kBL1x+uf/AKnISvH69T8A/wCiEGShCEAhCEAhCEAhC1vSLSP9PY7RW1spvc3+6IYPxFqDj3pE0+a9texpllImmwTgS0/SO5ukTsAWv6O0fXVgwcTuErzNNxe4ySdpzldE9GujxeqPjWBls/k+C5a+PRh73R9jaxgACzTSVlJkKbgucjVrGNILEtOj2uGI4LYlMBOE1Y5J0r6P3HFwbhrGzeF5s2cwPrDEa/IXbdJ2NtRpDhK51prQxpOkDqzIOzcVZr9NySvJV7PeaSMJ8HbeMz5KiyKlMkiCDddGGOU+7vW2fSAJwzz45d+SwRTDapHZqDHjlPnar08WPRZgAc/MeIPivQ9FNKus1oZUnqzdfvY7B3PWN4C0j23TtxPwPxKvYO4j9/ilTkvp9CNIIkHAgRGPVOUbymZ5z+bUOAGK8v6PtKetsoY4y+kbuP1Tixx4CW/dC9R8vDWeJXaXs68up43hQOUHu7R5lOe+QY+12RwAxPejlsw/S34pc9on9bvgqyBG3CDjuze7iT80HhskfpZ8Tx2FE7thj9Dfinz247+2/lkPkgPEz3uGZ/tb8NsIGqMdYnXte/cNQ4boWrLCBhsbk1nE/tsTM68STj9p2ps/Vb51hBH1g/3H/gH/AEQrL7v91ncP+yEGQhCEAhCEAhCEAvDel61XNGObONSoxndL/wDAL3K5n6bHf+NZhtqPPcz91L8az9cm0QYeN66z6PRFN/8Ad81ybRj7pk6hPxXV/RqC6i95c0BzuoC4XjGZuiSBvIhctTrvn1HuGBWELBtL2tZL6pZwAgbs8StKLfSc7C1POcdSR4OxU4nZ/XpC1N2AWss1pdIxD2HJwIG7rDUZ2TyU7XaQ1wab0EEyATgBJyy5qLwrRpBjZkrW13etBu0i4b8B4qxtRntBgGObhfPCDgTwAWk6RW20MrBnq2EkOLQ9rHQGhhh0CGk3xAEzCeNqzcjTaY0M9nWFMhusTMcCFpLRZL7CO03Ecc/FeysFq9bTc19FjC1xBDWtiZBlpAwxa08hsVXSCz9VlU4XepgAOrdY4AwMYvYE47zqzzjr5deBtruo1w1O79ytsRB8PjHvVluswvPZODus3jmPHBa/RjzJacxlw/n9S3PcZvqvcdA9I+qtbWE9V/0bhvJ6n5gORXWvHHvPyC+fRXLHtcDBkY7CMiu86PtQq0adQZPY134gDdHOfOXTF/Th+We+sjntx97vkkeGzDd2W80/PE6hwCPPPWeAyW3Esec57zmeQw8EsOUDD7PZH3j8kGOUfl+binjO+fzEe4BAxPOeV4jE8GjDwSERujmGzntvOPmUsI3R+XXzce9SMzvn8xGA4NGPigLh/wBlve1Cj1f9497fkhBmIQhAIQhAIQhALmXppE0rMPtVD+gLpq5z6Yqc0KDtjnjvuH4Ka+NZ+uKXyGP4geP7LoPosqPNV7GvNxpY5w1Elr54dnuXPazYkbSugeiXSDPXvouaAXFz2vGDibuLHDtshsgajjrWL8dZ/HStLaOFa7OIaZumQDuMLA0nou+5rg1rbt6GtAjrXc9sXcMMJXoI4937qDmg7e4BZ8uQ8ZWostkeyi9ocbznAAnVecBhGoAk8lkaZoew4diQYzLXNLHRvg4bws9kSN2Q35SoWppOpYdO+2ps9lyBAMZHPPWDsKyKlha/MDxVbJY4A+yTA3LOfYwcZcfvvA7gYTq+PGBUsLKTesWsBykhsk4ADady0+mbKKjGk3rgeLzXNc0VGhrQ7AgG7LGY6xe1EL1NKzNZN1jWznDQJ4kZqu2Ug5hB2FCX243pamWVLskhjrgJzI9pp4wsN1KHX25HP3/PuWy6TCar4z6vgAPgtfo5xlzDiIBHAmD4+5XN9N6i2uJYDsXXPR7ab9gYCcWOezfnfAHJ/guRE9Rzdi6Z6LqwNCqzWHtd+IEYfhW8/XD8v+r2587tw3pefk0J+eHzKXh8P388erzj595+QS54Qcd2bnc0/PAbOJR+3fqbwGaBctmG/st5Zo57cd2b3czggcduP6nfAI5bDG7sN78UDv8A/Ee5qFK6/wCsO5CDJQhCAQhCAQhCAXjPSjZS+w3h2HtJ4ODm+8tXs1r9P2P11lrU4kuY67/cOs38wCl+NZvK+YLa2HeeKyOi+kv6e10Kp9llRpd/aZa78rirNK0IPAkcsYWlAzWc+46a9V9VU3AgHNQqu2Ly/o90z/UWKmC6X02NY83XAYSBiczAxjWvUwud9em5ZfaoNcALkEyJvTlry1qNvLyDdwMYZYKdptjKYF5wk4ATiVgVtKmCW0nkx9V3yUbzm69yMZlmqOAa+oXQZmACSNsQI4ALa0H4QVo//VKs42d443B/nKy7LbnP9qk9mMC9cx4XXHxWfjepZ9bN7ljWk9U8D7ldCi9iMONaea41qgDCbhAdlraCI25jvWmZbI60QQCIOftDDvWR0n0x/wCVaGhjHBtU3XESWubdaSAcHeyRiCvO+tJge7Lu711mfTN/L7r0NKtMnUcPFdB9E1X6Ss3awH8LwP8AIrl1N8UxxldE9ED5tLx/wu/XTTP1Pyf6us+f4S88OO0qcJEefOZXV5kY87N53pRy+A28SpR5+JS/nH3nz+wR5bMPc1Hvnx1ngBgn5+bikfCPDZxKCP0e095SVt5/1R3oQZSEIQCEIQCEIQCEIQcH9I+iDQtdSGwx/XZsh0mBwdI5Ln9VmMjWvof0l6G/qLG57RL6MvG0t7Y7gHfdXArRTx44hc7/AI12zfLLdejzTf8ATW5l50U6n0dTHDrYNcRlg6MdQJX0A4L5YIg4hdZ6C9P23W2e1uhzQGsquPVcBgGvOpwyvZHXBxM1P2Zv6dKNkYTJaJ2wJ70qllx9o4b1axwIkJlyxG/LX9YJsbAZiTtOKkGrIqELHcUq22/U1h6Wtfq6TndqDHHarn1oGAkry/SGy16zS1riCcARqUtWTridvB9a+cy4nvKjZqcleib0aebQ+k93WaA4mMDeMNHEn3FarTNkfQquouEFsH+5rgHNcNxBBXaXs45XMze1j2mt2W5DM7V070OCbS87KDp436a5YxkgLtfoa0eW0a1Yj2i2m37suf8AqZ3JPvC22W10iEiPPyClCIW3FCPPzSjz89ynCRHn5oIR527+CUef8juUyPO39kiPO3dwQVdX6zu93yTVknaPPNCDIQkmgEIQgEIQgEIQgThtXB+n3Rc2a0G6Pony5h2CcW8WzG8EFd4Wv05oinaaRp1Bhm1wzY7U4fLWs6nY1nXjXzC+xOvaij+lxGPyXtukXQ202aocC+mT1XtaS07jncduPKV6foB0TawPtNrpgNaJZ65jWBsYl8OJgDHEgblJ10tnOoei59UUajX37l5vqy69ciCHhhOEAgZYSV7suIxWK7SAqVGtawtaGkskXSWyBNzsDKAcYzg4DJlc9eqs+GMQsd7cVkU1F7VlpjEQqnbU6z157T+mhSpuIzjBZ+3ka/XawNEvv6bdTY28w0fpDhDbplpPN0ffCxvTPoYAUbS1uLfon/25sceBvDmF6f0Z6FdToPtNQfS2kh+OYYJuDnJdwLdi9NpewU61NzKrA9jolpyMEEZYjEBerOeTjz615Xr520DoKraKrKVJt5ziDIBLWDW951NE57gM8F9HaF0YyzWenRZ7LGxJzcc3PO8mSoaKstCiy5SpMpjMhoAk7S7Nx3lbFJOJdd9EkQpIVZRhKPPnNSShAo8+dSRHn4BSI8/NKEEbu4ITjcEILU0IQCEIQCEIQCSESgaSJUHVNiCRdCwLdRDy0vxa03g3VeGIc7aRmBqOOcRnMZtWn6TaRbRove4wGtJPISpWsz285/Xg29wB9hgbzc6T7gvRtxErknRG3PfaXvf7VQ3zuxIjkIHJdXonqDguG5c6sr0T3mWLaYxVVtqho84q+z0yTAH7LJp2VrCXuxftOrc0akzm6Z1qRpRo57xeqG4zOO1G/wCrz7l4oWdukLcylTbdszHElwmXtaRfeTnjLWjZeB2rYdOekBeXWWkcJ+mcP/zbvOvu2r03QrQgs9nDnCH1A0u+y0TcYNwkk7S4lejOJmd/bz63dXn6j0QAAAAgDAAagMgFXElTzTdhgqqq406lNjIyKGtVgCBB21TUYQMERJEJApqBJQpIQR7kKSEEkJJoBCEkDSQUQgimnC8n036TizU7jDNV4w13Ae1/dsHPVB1J28ia1MztT6UdL6dm6jYfUOF2eq3e8jHX7Ix4ZrXdGTXtNdlas15Y2XMLjcYXAdX1dIHEA43jJwzWo6G9GTUcLTaW3gcWMdjfnG+4HNuvH2jicM+m06cHEidm7LuWrc5nI5ZzrV8reT+LXFc09K9rcLO1gmH1GtJ3CXeN2Oa6RVMBcZ9I9s9baqdIHBl57t0i633OT8OfLcjv3ktV9BmsFXEY3cO9dasljJAL8N2vnsXmPR70W9WxtpqjrvaLjD2GHEOI+sRHAb8vdkLH5sZv5rf03N/4yRBjAMl4/p30i9Q0UqZ+meMP+NpwvnfnHCdS3fSPTjLJQdUdBd7LGT7btQ3AZk7N8LnfRfQ77daX17QbzS688ntHUwbG5cAAFcZnO34461e+M+1segnRi9dtFYSyb1Nrs3u1vdOrZtz49EeU2tAAAEADBQmSlvb1cyZnIk0QFGMUnP1BWtEDeVGgBqCkO8oAVbqupoREnbyqXPbtQaZOZUTSbsQJu0LKacFiXAMlk0jglFiEgmoBCaECTSQgE0kIAJoCT3gAkmABJVFNrtIY28eQ1k7F4qz9EWutTrTXcXt9oMcbxc8knr6roEYDPLIY6Tp90veyoGUX3XAzOBuicM8MTnzVWj9P240herFzzi0FjOrIwaRdz1niBqKslk7/AFbmX1XTaQDGl7zHwnIAbSr6tia514kz1Zg53TIHCdmcLwtp0rWa1oq1L9SZi6A2mDqIAF50bdpymF0YjErP0YOknkMIaJJwAGsrmtg6FVatsfUtFSnBeHOY0vebjSIZJaG45EgnXErqTm4zgq20w0QAANwhbzu5vYWSxYHFU2y1Np031Kj7rGAucTqA953a0iuX9L9OutdYWagZpMdiRlUeO1vaMY5nYpJ2sa14z/rEtFatpO2AgEMGDG6mMnM6rxzJ24ZALqmidHMoUmsYIAGO86yVq+iOhG2ekCR13ZnWvQOV1e/Eznn37UHFVvfA3q0iMSsZnWcstrqDYElQs1Qvl5ENyZOsfW4H3QrKjL0N1Zu4bOatKoiQTwTuwgk6kizaVAnDeoFo2plgUS0KiJYFZQzKrKnQz5KC9NJNQNCEIEhCEAhqSd3BWCS0unqj3zSpCXRLsQN4knZIPEt2LbValxjnHG6Cd52AbzgFg6PYQwvcZc8yTunCOJJMbwFL/Fn9c7rdHrS556hAET1m57AtozRFWnRvMbfqkQDhdZtcMOsRtjHgOt6+nTvn7A/NtA3bTryGE3s1tMbMFOdXrwWhOjdZ9QGsHBgMuvRic4BzPHeV0ZxSa1ScqisqDmqZWi6VacbZaBfgXnqsb9Z3yGZ/cLUnbxm6kna856QOktxps1F3XePpHDsMPZnU53gOIR0D6NXGCq9sFw6oIyH7rU9CNAutNd1pry5odeJPbfnB3DM8gupxGAWreTkc8S6vlr/xGIwRCEPdAlYdmNbKnZCts7LrVi2dl986gs9wyHM8FUJgw3nFNMpKBSghBfsVbnSgZj6wUC5v1gmRuCjhsVCLhtU6HtclEtCnQzPBQXoQhQNCEIEhCEChSQMk81RrdNV2+rc0OF4OpuuziQ17Hlg+0QCANZIUy2+xg7ECCO02MII2j5bZpr6HBrCpMm9exJgSIdgMzEgTlJwWxbSjIkDYCQO4KcVivtLGQHODcMBu4BKx6VpPeWMf1hjBBBjaJzUbfooVCHXnAjDOZ71jaL6OtZW9c55c4AhuEe1nPci+m+CZyUQVgW21NpOvvcILboABc9x+q1ozGv5Ii601Q0EkwACSTgABmSuUW6o/SVuaxk3G4M2NYD1nkbTnxIGpbjpl0sY+iabA5rnOIeHgAgDIawZOJ3NI1rb+jvRHqrOaj2w+oQccwweyOck89y6T1OuOp5a5+p9ek0fYWUababBDWiBv3nerypOShYdSAWFa6kmAs8sMGFg06PXOMoMiy04arW6yk50BTaMFQioFsqwhQcoIloCiXhNzVAgIIl6CndG1BYqIwpUMzwShSoZu5fFQXoQhQCEIQCbQkpsCBgIupocigoQhVAUwgoOSDEt1pbSY57vZA1Zk5Bo3kkAcV463Wtxc+pUImDOODG5tYNoz2Scdi23S+2tYaAc660l75ORc1oDB+cnkFoRQFY33NLaQgwcC8jdqZ71FYtJhbSD3sJ9bUD39W9daXAtEcA3hJXQrIeoCNi8rZ6VWvUALLrAczIngDqXr6TIAAVEgFMBAUrgO5EVevAa9xODJn7rZK8/0d0matD1pEF7y5rZvQ0Q0CdvVJO8lbPSljP8ASVqTXwXsewOIkgv6swImJWk0Fol1nZcc4OgBrYnIayNROa1Ocv8AU5e/8bv1svY3afcC74LYQtHRovNrpukXGsdhON5wgGIyAHit8VmtcQIUHBTLlU8hQRfG1VF7dblY6Niqc1uxUBqs2qPrxqBThu1O7KqC+p2bI8fgq3iArrN7IO2fepRahCFAIQhA2qTEIRUkPyQhA2oQhVAjUkhBqtPf6Q/vb8Vgv9pvFCEVtrP7RWW1CEDUbT7DuCEKxL8V2n/TbxasVyEKNT4ssnt/dPvCzShClFblShCIi5VOTQgoep2XMoQqLa2Sts3sN4IQlRahCFAIQhB//9k=" alt="Участник команды">
+        <h3>Анна Смирнова</h3>
+        <p>Менеджер по продажам</p>
+      </div>
+      <!-- Добавьте остальных участников команды -->
+    </section>
+  
+    <section class="achievements">
+      <h2>Наши достижения</h2>
+      <ul>
+        <li class="fas fa-check-circle">Разработка нового препарата для лечения редких заболеваний.</li>
+        <li class="fas fa-check-circle">Открытие нового метода ранней диагностики рака.</li>
+        <li class="fas fa-check-circle">Проведение успешной операции по трансплантации сердца.</li>
+        <li class="fas fa-check-circle">Исследование, приведшее к разработке эффективного противовирусного препарата.</li>
+        <li class="fas fa-check-circle">Проведение масштабной программы просветительской работы о важности здорового образа жизни.</li>
+        <li class="fas fa-check-circle">Разработка инновационного медицинского оборудования для диагностики и лечения.</li>
+        <li class="fas fa-check-circle">Участие в клинических исследованиях нового метода лечения пациентов с хроническими заболеваниями.</li>
+        <li class="fas fa-check-circle">Предоставление медицинской помощи пострадавшим в чрезвычайных ситуациях.</li>
+        <li class="fas fa-check-circle">Обучение и подготовка молодых специалистов в области медицины.</li>
+        <li class="fas fa-check-circle">Партнерство с международными организациями для борьбы с инфекционными заболеваниями.</li>
+      </ul>
+    </section>
+    
+  
+    <section class="gallery">
+      <h2>Фотогалерея</h2>
+      <div class="image-container">
+        <img src="https://picsum.photos/200/200/?random&category=medicine" alt="Фотография">
+        <img src="https://picsum.photos/200/200/?random&category=medicine" alt="Фотография">
+        <img src="https://picsum.photos/200/200/?random&category=nature" alt="Фотография">
+        <!-- Добавьте остальные фотографии -->
+      </div>
+    </section>
+
+    <h3>По вопросу напишите нам:</h3>
+        <form action="Связ.html" method="POST">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" ><a href="Связ.html">Отправить</a></button>
+    </form>
+<br>
+<br>
+<br>
+<br>
+<main>
+  <section>
+    <h2>Местоположение</h2>
+    <div id="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1505.6181760934703!2d74.58388287992884!3d42.84091437912464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9af243aa173%3A0xc9bbab0472e9dc5e!2z0J_QvtC70LjRgtC10YU!5e0!3m2!1sru!2skg!4v1686764809613!5m2!1sru!2skg" width="380" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+</main> 
+
+<footer>
+  <nav>
+    <ul>
+      <li><a href="index.html"><i class="fas fa-medkit"></i>  Прием лекарств</a></li>
+      <li><a href="calendar.html"><i class="fas fa-calendar"></i>  Календарь</a></li>
+      <li><a href="history.html"><i class="fas fa-history"></i>  История</a></li>
+      <li><a href="circle.html"><i class="fas fa-info-circle"></i>  О нас</a></li>
+      
+      
+
+      
+    </ul>
+  </nav>
+</footer>
+    
+    
+      
+      <script src="app.js"></script>
+  </body>
+  </html>
+  
+
+</body>
+</html>

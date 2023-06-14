@@ -1,0 +1,10 @@
+header {
+  background-color: #f2f2f2;
+  padding: 2px;
+}
+
+#currentDateTime {
+  color: red;
+  font-size: 28px;
+}
+

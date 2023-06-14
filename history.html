@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>История приема лекарств</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h3><i class="fa fa-heartbeat"></i> История приема лекарств <span id="current-time"></span></h3>
+  </header>
+  
+  <script>
+    function getCurrentTime() {
+      const currentTime = new Date();
+      const hours = currentTime.getHours().toString().padStart(2, '0');
+      const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+      const seconds = currentTime.getSeconds().toString().padStart(2, '0');
+      const currentTimeString = `${hours}:${minutes}:${seconds}`;
+  
+      document.getElementById('current-time').innerHTML = currentTimeString;
+    }
+  
+    getCurrentTime(); // Инициализация текущего времени при загрузке страницы
+  
+    // Обновление текущего времени каждую секунду
+    setInterval(getCurrentTime, 1000);
+  </script>
+  
+
+  <section>
+    <h2>История приема лекарств</h2>
+    <ul id="history-list"></ul>
+
+  </section>
+  <section>
+    <p>У вас нет истории лекарств <i class="fas fa-history scary-red"></i></p>
+    <style>
+      .scary-red {
+        color: red;
+        font-size: 24px;
+      }
+    </style>
+    
+    <ul id="medication-list"></ul>
+    <div class="form-group">
+      <button id="delete-selected"><i class="fa fa-trash"></i> Удалить выбранные</button>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-medkit"></i>  Прием лекарств</a></li>
+        <li><a href="calendar.html"><i class="fas fa-calendar"></i>  Календарь</a></li>
+        <li><a href="history.html"><i class="fas fa-history"></i>  История</a></li>
+        <li><a href="circle.html"><i class="fas fa-info-circle"></i>  О нас</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
